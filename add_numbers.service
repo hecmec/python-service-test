@@ -1,0 +1,10 @@
+[Unit]
+Description=Add Numbers Service
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/add_numbers.py 5 10
+Restart=always
+User=yourusername
+
+[Install]
+WantedBy=multi-user.target
