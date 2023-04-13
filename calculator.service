@@ -1,0 +1,10 @@
+[Unit]
+Description=Calculator Service
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/calculator.py
+Restart=always
+User=yourusername
+
+[Install]
+WantedBy=multi-user.target
